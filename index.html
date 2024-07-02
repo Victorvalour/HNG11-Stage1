@@ -18,7 +18,7 @@
         <i class="fas fa-bars"></i>
       </label>
       <label class="logo">HNG 11</label>
-      <ul>
+      <ul class="nav-ul">
         <li><a class="active" href="#">Home</a></li>
         <li><a href="https://hng.tech/learn">HNG Learn</a></li>
         <li><a href="https://keyword.dog/">Keyword.dog</a></li>
@@ -27,16 +27,21 @@
     </nav>
 
     <main class="">
+      <div class="date-div">
+        <span id="current-day" data-testid="currentDay"></span>,
+        <span class="" id="current-time" data-testid="currentTimeUTC"></span>
+      </div>
       <div class="hero">
         <div class="profile-info">
-          <h1 class="display-name">Ctrl-V</h1>
+          <h1 class="display-name" data-testid="slackDisplayName">Ctrl-V</h1>
           <h2>Eweh Victor</h2>
-          <p class="email">ewehvictor7@gmail.com</p>
+          <p class="email" data-testid="slackEmail">ewehvictor7@gmail.com</p>
         </div>
         <div>
           <img
             src="./assets/slack-profile-picture.png"
             alt="My slack profile picture"
+            data-testid="slackProfilePicture"
           />
         </div>
       </div>
@@ -45,11 +50,51 @@
         <div class="topic-container">
           <p class="topic">My tech goals in two years</p>
         </div>
-        <p></p>
+        <p>
+          The list for my tech goals is inexhustive, but in the next two years
+          there are things that I aim to accomplish in order to consider them as
+          a productive and successful two years.<br /><br />
+          These are my goals:<br />
+        </p>
+        <ul class="article-ul">
+          <li>
+            Being an entirely self-taught developer, I hope to complete one or
+            more professional and industry-recognized software engineering
+            certificate programs in order to validate my expertise and stay
+            competitive in the job market.
+          </li>
+          <li>
+            I aim to have a portfolio that showcases my diverse skill set
+            through completed projects, demonstrating my ability to solve
+            real-world problems and innovate within my field.
+          </li>
+          <li>
+            I plan to enlarge the tech world and raise more professionals by
+            mentoring junior developers and sharing my knowledge and experience
+            with them to help them grow in their careers.
+          </li>
+          <li>
+            I hope to bring my innovations to life by building a tech start-up
+            company that solves real-world problems.
+          </li>
+        </ul>
+      </div>
+      <div class="links">
+        <p class="links-head">Links:</p>
+        <a href="https://hng.tech/learn" data-testid="hngLink"
+          >https://hng.tech/learn</a
+        >
+        <a href="https://keyword.dog/" data-testid="keywordLink"
+          >https://keyword.dog/</a
+        >
+        <a href="https://scrapeanyweb.site/" testid="scrapeanywebLink"
+          >https://scrapeanyweb.site/</a
+        >
       </div>
     </main>
     <div class="footer">
       <img src="assets/wave-2.svg" class="bottom-svg footer" />
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
