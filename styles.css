@@ -163,10 +163,10 @@ box-shadow:  5px 5px 18px #bcbcbc,
 
 }
 .footer {
-    height: 150px;
+    height: 50px;
     position: relative;
 }
-.bottom-svg {
+/* .bottom-svg {
   
     width: 100%;
     height: max-content;
@@ -179,7 +179,7 @@ box-shadow:  5px 5px 18px #bcbcbc,
     left: 0;
    
     
-}
+} */
 @media (max-width: 952px) {
     label.logo {
       font-size: 30px;
@@ -207,7 +207,7 @@ box-shadow:  5px 5px 18px #bcbcbc,
 
    margin-bottom: 20px;
 }
-.bottom-svg {
+/* .bottom-svg {
   
   width: 100%;
   height: max-content;
@@ -220,7 +220,7 @@ box-shadow:  5px 5px 18px #bcbcbc,
   left: 0;
  
   
-}
+} */
 
   }
   
