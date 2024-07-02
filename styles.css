@@ -48,8 +48,8 @@
     text-transform: uppercase;
   }
   
-a.active,
-a:hover {
+nav a.active,
+nav a:hover {
   background: #1183da;
   transition: .5s;
 }
