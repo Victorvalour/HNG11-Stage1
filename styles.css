@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f1f5f9;
+  }
+  
+  nav {
+    background: #0099ff;
+    height: 80px;
+    width: 100%;
+  }
+  
+  label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    float: right;
+    margin-right: 20px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  
+  nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  
+a.active,
+a:hover {
+  background: #1183da;
+  transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check {
+    display: none;
+  }
+main{
+    flex: 1;
+    padding: 35px 150px;
+    
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+width: 50%;
+text-align: center;
+padding: 5px;
+border-radius: 11px;
+background: linear-gradient(145deg, #cacaca, #f0f0f0);
+box-shadow:  13px 13px 26px #bcbcbc,
+             -13px -13px 26px #ffffff;
+}
+
+h1 {
+    font-size: 44px;
+    color: #0a4b77;
+}
+h2 {
+    color: #2c3e50;
+}
+
+.email {
+    color: #2c3e50;
+}
+
+.article {
+    background-color: #c0d1e4;
+    width: auto;
+    height: 600px;
+    padding-top: 20px;
+    border-radius: 20px;
+    margin-top: 30px;
+    
+}
+
+.topic-container {
+    background-color: #0099ff;
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+    margin-top: 20px;
+    padding: 5px;
+border-radius: 11px;
+background: linear-gradient(145deg, #eec0c0, #0099ff);
+box-shadow:  5px 5px 18px #bcbcbc,
+             -5px -5px 18px #ffffff;
+}
+.topic {
+    font-size: 34px;
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.footer {
+    height: 150px;
+    position: relative;
+}
+.bottom-svg {
+  
+    width: 100%;
+    height: max-content;
+    background-repeat: no-repeat;
+    
+   
+    position: absolute;
+    padding-bottom: 0px;
+    bottom: 0;
+    left: 0;
+   
+    
+}
+@media (max-width: 952px) {
+    label.logo {
+      font-size: 30px;
+      padding-left: 50px;
+    }
+  
+    nav ul li a {
+      font-size: 16px;
+    }
+
+    main{
+    flex: 1;
+    padding: 35px 130px;
+}
+
+  }
+  
+  @media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+      }
+
+
+    ul {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+      z-index: 10;
+    }
+  
+    nav ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+  
+    nav ul li a {
+      font-size: 20px;
+    }
+  
+    a:hover,
+    a.active {
+      background: none;
+      color: #0082e6;
+    }
+  
+    #check:checked~ul {
+      left: 0;
+    }
+    main{
+        flex: 1;
+        padding: 30px 60px;
+    }
+    .hero {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .profile-info {
+    width: 100%;
+    background-color: aqua;
+    }
+    
+    
+  }
+  @media (max-width: 525px) {
+ 
+    main{
+        flex: 1;
+        padding: 15px 10px;
+    }
+    .hero {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .profile-info {
+    width: 100%;
+    background-color: aqua;
+    }
+    
+    
+  }
